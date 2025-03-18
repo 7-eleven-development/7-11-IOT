@@ -167,3 +167,5 @@ Ha en check-up i veckan och uppdatera README vid behov.
 - [Arduino MKR WiFi 1010](https://www.electrokit.com/arduino-mkr-wifi-1010?gad_source=1&gclid=Cj0KCQjws-S-BhD2ARIsALssG0YEc8SuMs2tlNIh_GSh-lgSGMNSgjgY7Fwwuy5J76C6Lp2cyn7i4RwaAgYZEALw_wcB)
 - [Lipo Battery with JST connector](https://www.amazon.com/802040-Battery-Rechargeable-Lithium-Connector/dp/B09WN4XP59)
 - [GNSS/GPS](https://www.electrokit.com/gps-modul-u-blox-neo-7m-for-arduino)
+- [Batteri hylsa](https://www.electrokit.com/batterihallare-2x18650-sladdanslutning?gad_source=1&gclid=Cj0KCQjws-S-BhD2ARIsALssG0ZP3UC5KVU5rKhrko89EO-yGENIQqO5c4Rzpa3vapcQHz1miIjOKe0aAtAiEALw_wcB)
+- [Micro USB](https://www.amazon.com/Amazon-Basics-Charging-Transfer-Gold-Plated/dp/B07232M876?th=1)

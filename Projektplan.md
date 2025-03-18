@@ -165,5 +165,5 @@ Ha en check-up i veckan och uppdatera README vid behov.
 ## Inköp
 - Pulse Sensor
 - Arduino MKR WiFi 1010
-- [Lipo Battery with JST connector](https://www.batteriexperten.com/sv/artiklar/dji-phantom-3-standard-remote-controller-mfl.html)
+- [Lipo Battery with JST connector](https://www.amazon.com/802040-Battery-Rechargeable-Lithium-Connector/dp/B09WN4XP59)
 - GNSS/GPS

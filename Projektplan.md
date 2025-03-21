@@ -2,7 +2,7 @@
 # Sensor Pro 
 ## Medlemmar:
 ### Frontend:
-### Backend:
+### Fullstack:
 *Andreas Zetterlund* Github: https://github.com/andreaszetter
 ### IoT:
 ## Obligatoriska delar i projektplanen

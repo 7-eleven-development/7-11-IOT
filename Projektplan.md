@@ -3,9 +3,7 @@
 ## Obligatoriska delar i projektplanen
 
 ### Medlemmar:
-Andreas Zetterlund 
-
-https://github.com/andreaszetter
+Andreas Zetterlund Github: https://github.com/andreaszetter
 
 
 ### Introduktion och bakgrund

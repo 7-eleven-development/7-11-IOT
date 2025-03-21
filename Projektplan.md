@@ -54,12 +54,11 @@ Arbetsplatser inom byggbranschen innebär ofta att arbetarna utsätts för fysis
 - **Frontend:** React Native
 - **Backend:** Kandidater: NodeJS, C, C++, C#, Python  
   Databaser (SQL, XML, JSON)
-  Skapa API/REST-API
 - **IoT:** Måste vara mellan språk C++, C, Arduino (Stödjer EJ andra programmeringsspråk)
 
 #### Översikt över systemarkitekturen
 - **IOT:** Hanterar datainsamling som skickas över till backend.
-- **Backend:** Hanterar datan och utför instruktioner för datan som skickas vidare till frontend.
+- **Backend:** Hanterar datan och utför instruktioner för datan som skickas vidare till frontend. Skapa API/REST-API
 - **Frontend:** Visar resultatet från instruktionerna på ett användarvänligt sätt.
 
 #### Beslut kring databas- och API-struktur

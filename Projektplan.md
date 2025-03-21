@@ -10,6 +10,9 @@
 *Sebastian Ritschevald* Github: https://github.com/bugstile
 ### IoT:
 *Wilmer Forsman* Github: https://github.com/Wilmer-Chas
+
+*Fabian Åman* https://github.com/Jockomoko
+
 ## Obligatoriska delar i projektplanen
 
 

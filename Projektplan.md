@@ -5,7 +5,7 @@
 ## Medlemmar:
 ### Frontend:
 ### Backend:
-Andreas Zetterlund Github: https://github.com/andreaszetter
+*Andreas Zetterlund* Github: https://github.com/andreaszetter
 ### IoT:
 
 ### Introduktion och bakgrund

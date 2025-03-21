@@ -4,6 +4,8 @@
 ### Frontend:
 ### Fullstack:
 *Andreas Zetterlund* Github: https://github.com/andreaszetter
+*Frank Norqvist* Github: https://github.com/FrankNorq
+*Sebastian Ritschevald* Github: https://github.com/bugstile
 ### IoT:
 *Wilmer Forsman* Github: https://github.com/Wilmer-Chas
 ## Obligatoriska delar i projektplanen

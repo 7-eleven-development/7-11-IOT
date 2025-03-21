@@ -1,7 +1,13 @@
 # 7-11 Bygg Projektplan
 # Sensor Pro 
 ## Medlemmar:
+*Teodora Kricka* Github: https://github.com/Teo-02
+
+*Sandra Obradovic* Github: https://github.com/sandpand
 ### Frontend:
+*Alex Raunert* Github: https://github.com/AlexanderRaunert
+
+
 ### Fullstack:
 *Andreas Zetterlund* Github: https://github.com/andreaszetter
 
@@ -11,10 +17,11 @@
 ### IoT:
 *Wilmer Forsman* Github: https://github.com/Wilmer-Chas
 
-*Fabian Åman* https://github.com/Jockomoko
+*Fabian Åman* Github: https://github.com/Jockomoko
 
-*Nikki Norman* https://github.com/StikkyNikki
+*Nikki Norman* Github: https://github.com/StikkyNikki
 
+*Viktor Kvick* Github: https://github.com/Viktorkvick
 ## Obligatoriska delar i projektplanen
 
 

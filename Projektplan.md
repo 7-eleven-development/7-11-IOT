@@ -1,6 +1,10 @@
 # 7-11 Bygg Projektplan
-
+# Sensor Pro 
 ## Obligatoriska delar i projektplanen
+
+### Medlemmar:
+Andreas Zetterlund https://github.com/andreaszetter
+
 
 ### Introduktion och bakgrund
 
@@ -30,6 +34,7 @@ Arbetsplatser inom byggbranschen innebär ofta att arbetarna utsätts för fysis
 - **Frontend:** React Native
 - **Backend:** Kandidater: NodeJS, C, C++, C#, Python  
   Databaser (SQL, XML, JSON)
+  Skapa API/REST-API
 - **IoT:** Måste vara mellan språk C++, C, Arduino (Stödjer EJ andra programmeringsspråk)
 
 #### Översikt över systemarkitekturen

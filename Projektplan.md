@@ -13,6 +13,8 @@
 
 *Fabian Åman* https://github.com/Jockomoko
 
+*Nikki Norman* https://github.com/StikkyNikki
+
 ## Obligatoriska delar i projektplanen
 
 

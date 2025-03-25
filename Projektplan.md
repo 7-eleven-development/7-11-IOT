@@ -3,7 +3,7 @@
 ## Medlemmar:
 *Teodora Kricka* Github: https://github.com/Teo-02
 
-*Sandra Obradovic* Github: https://github.com/sandpand
+
 ### Frontend:
 *Alex Raunert* Github: https://github.com/AlexanderRaunert
 
@@ -24,7 +24,7 @@
 *Viktor Kvick* Github: https://github.com/Viktorkvick
 ## Obligatoriska delar i projektplanen
 
-
+*Sandra Obradovic* Github: https://github.com/sandpand
 
 ### Introduktion och bakgrund
 

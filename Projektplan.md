@@ -79,7 +79,7 @@ SQL = PostgreSQL
 ### Gruppens sammansättning – vilka ingår i varje team?
 
 - **Systemutvecklare:** Viktor, Wilmer, Sandra, Nikki, Fabian
-- **Fullstack:** Andreas, Frank, Sebastian, Moa?
+- **Fullstack:** Andreas, Frank, Sebastian, Moa
 - **Front-end:** Alex och Teodora.
 
 ### Beskrivning av huvudansvar och arbetsuppgifter för varje team

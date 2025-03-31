@@ -4,19 +4,30 @@
 
 
 ### Frontend:
+
 *Alex Raunert* Github: https://github.com/AlexanderRaunert
+
 *Teodora Kricka* Github: https://github.com/Teo-02
 
+
 ### Fullstack:
+
 *Andreas Zetterlund* Github: https://github.com/andreaszetter
+
 *Frank Norqvist* Github: https://github.com/FrankNorq
+
 *Sebastian Ritschevald* Github: https://github.com/bugstile
 
 ### IoT:
+
 *Wilmer Forsman* Github: https://github.com/Wilmer-Chas
+
 *Fabian Åman* Github: https://github.com/Jockomoko
+
 *Nikki Norman* Github: https://github.com/StikkyNikki
+
 *Viktor Kvick* Github: https://github.com/Viktorkvick
+
 *Sandra Obradovic* Github: https://github.com/sandpand
 
 

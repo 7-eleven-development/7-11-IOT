@@ -1,12 +1,11 @@
 # 7-11 Bygg Projektplan
 # Sensor Pro 
 ## Medlemmar:
-*Teodora Kricka* Github: https://github.com/Teo-02
 
 
 ### Frontend:
 *Alex Raunert* Github: https://github.com/AlexanderRaunert
-
+*Teodora Kricka* Github: https://github.com/Teo-02
 
 ### Fullstack:
 *Andreas Zetterlund* Github: https://github.com/andreaszetter

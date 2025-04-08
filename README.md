@@ -8,6 +8,11 @@ A project aimed at encomppasing a sensor within a belt or wristband that will me
 * **Air Quality Sensor**: Calculates how good air quality is within the nearby region.
 
 # Getting Started
+* **Temperatur**: Kommer läsa float values i Celcius. Exemepl data 18
+* **LjudKänslighet**: Kommer läsa en float vlaues kommer vara mellean 0 - 100 db. Exempel data 79
+* **GasSensor**: Kommer läsa float values i tre olika värden mäts i PPM (part per million). Rök i float, Propane/Hydrogen i float och CO2 float. Exempel data 107.167, 12.3632, 132.812
+* **PulsSennsor**: Kommer läsa av BPM i int som hjärtpuls. Exempel data 108
+* **GPS**: Kommer läsa av long float latitud och longitud. Exempel data 14.949945,102.044807
 
 ## Installation
 

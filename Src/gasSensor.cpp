@@ -3,8 +3,9 @@
 
 // handles logic related to the gas sensor
 void gasSensor()
-{ 
-	gasLevel = analogRead(gasPin); 
+{
+	gasLevel = analogRead(gasPin);
 	Serial.print("Gas Level: ");
-	Serial.println(gasLevel);  
+	Serial.println(gasLevel);
+	delay(500);
 }

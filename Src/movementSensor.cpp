@@ -5,7 +5,7 @@
 void movementSensor()
 {
   pirMovementValue = analogRead(pirPin);
-  
+
   Serial.print("Movement Value: ");
   Serial.println(pirMovementValue);
 }

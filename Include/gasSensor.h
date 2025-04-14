@@ -2,6 +2,6 @@
 #define GASSENSOR_H
 
 // Function prototype
-void gasSensor();
+void readGasSensor();
 
 #endif

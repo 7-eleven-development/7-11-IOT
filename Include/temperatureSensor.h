@@ -2,7 +2,7 @@
 #define TEMPERATURESENSOR_H
 
 // Function prototype
-void temperatureSensor();
+int readTemperatureSensor();
 
 void sendTemperature(float temp);
 

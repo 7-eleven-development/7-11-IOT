@@ -5,11 +5,11 @@
 #include "wifiHandler.h"
 
 
-void connectToWiFi(unsigned long timeout = 10000) {
+void connectToWiFi(int timeout) {
     Serial.print("Connecting to WiFi");
 
     int status = WL_IDLE_STATUS;
-    unsigned long startAttemptTime = millis();
+    int startAttemptTime = millis();
 
 // keeps looping only if the elapsed time is less than the timeout, if the wifi hasnt connected
     while (status != WL_CONNECTED && millis() - startAttemptTime < timeout) {

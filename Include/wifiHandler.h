@@ -2,6 +2,6 @@
 #define WIFIHANDLER_H
 
 // Function prototype
-void connectToWiFi(unsigned long timeout = 10000);
+void connectToWiFi(int timeout = 10000);
 
 #endif

@@ -7,7 +7,7 @@ DHT dht(temperaturePin, DHTTYPE);
 
 float temperatureCelsius = 0.0;
 
-void temperatureSensor()
+int readTemperatureSensor()
 {
   temperatureCelsius = dht.readTemperature();
 
@@ -16,6 +16,7 @@ void temperatureSensor()
   } else {
     Serial.print("Temperature in Celsius: ");
     Serial.println(temperatureCelsius);
+    return temperatureCelsius;
   }
 }
 

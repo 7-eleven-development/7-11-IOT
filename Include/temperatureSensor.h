@@ -4,4 +4,6 @@
 // Function prototype
 void temperatureSensor();
 
+void sendTemperature(float temp);
+
 #endif

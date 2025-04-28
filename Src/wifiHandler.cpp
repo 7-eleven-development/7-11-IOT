@@ -1,9 +1,7 @@
 #include <Arduino.h>
-#include <WiFi.h>
+#include <WiFiNINA.h> 
 #include "config.h"
-#include <WiFiS3.h>
 #include "wifiHandler.h"
-
 
 void connectToWiFi(int timeout) {
     Serial.print("Connecting to WiFi");
@@ -11,9 +9,12 @@ void connectToWiFi(int timeout) {
     int status = WL_IDLE_STATUS;
     int startAttemptTime = millis();
 
-// keeps looping only if the elapsed time is less than the timeout, if the wifi hasnt connected
+    // ✅ Start connection only once
+    WiFi.begin(ssid, password);
+
+    // Keep looping until connected or timeout reached
     while (status != WL_CONNECTED && millis() - startAttemptTime < timeout) {
-        status = WiFi.begin(ssid, password);
+        status = WiFi.status();  // ✅ Only check status after begin()
         delay(1000);
         Serial.print(".");
     }
@@ -23,6 +24,6 @@ void connectToWiFi(int timeout) {
         Serial.print("IP Address: ");
         Serial.println(WiFi.localIP());
     } else {
-        Serial.println("\n WiFi not connected — continuing without connection.");
+        Serial.println("\nWiFi not connected — continuing without connection.");
     }
 }

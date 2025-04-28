@@ -1,14 +1,13 @@
 #include "temperatureSensor.h"
 #include "DHT.h"
 #include "config.h"
-#include <WiFiS3.h>
-
-DHT dht(temperaturePin, DHTTYPE);
+#include <WiFiNINA.h>
 
 float temperatureCelsius = 0.0;
 
 int readTemperatureSensor()
 {
+  Serial.println("Reading temperature...");
   temperatureCelsius = dht.readTemperature();
 
   if (isnan(temperatureCelsius)) {
@@ -18,6 +17,7 @@ int readTemperatureSensor()
     Serial.println(temperatureCelsius);
     return temperatureCelsius;
   }
+  delay(2000);  // Delay for next reading (2 seconds)
 }
 
 // may want to rework this code eventually as we send in more data and controll it globally at one place
@@ -25,7 +25,6 @@ int readTemperatureSensor()
 void sendTemperature(float temp)
 {
   WiFiClient client;
-
 
   if(client.connect(server, port))
   {
@@ -57,5 +56,9 @@ void sendTemperature(float temp)
   else
   {
     Serial.println(" Failed to connect to backend.");
+    Serial.print("Server IP: ");
+    Serial.println(WiFi.localIP());
+    Serial.print("Port: ");
+    Serial.println(port);
   }
 }

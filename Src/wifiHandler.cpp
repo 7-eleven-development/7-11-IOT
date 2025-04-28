@@ -5,12 +5,14 @@
 
 void connectToWiFi(int timeout) {
     Serial.print("Connecting to WiFi");
+    Serial.flush();
 
     int status = WL_IDLE_STATUS;
     int startAttemptTime = millis();
 
     // ✅ Start connection only once
     WiFi.begin(ssid, password);
+    Serial.println("WiFi.begin() called");
 
     // Keep looping until connected or timeout reached
     while (status != WL_CONNECTED && millis() - startAttemptTime < timeout) {

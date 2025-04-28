@@ -2,6 +2,6 @@
 #define MOVEMENTSENSOR_H
 
 // Function prototype
-void movementSensor();
+void readMovementSensor();
 
 #endif

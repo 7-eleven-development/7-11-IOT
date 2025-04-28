@@ -4,16 +4,21 @@
 #include <Arduino.h> // this might be a bad idea
 
 // temperature STUFF
-int temperaturePin = A0; // Analog pin A0
-int temperatureSensorValue = 0; // later converted into voltage
-float temperatureCelsius = 0.0;
+extern int temperaturePin;         // Analog pin A0
+extern int temperatureSensorValue; // later converted into voltage
+extern float temperatureCelsius;
 
 // Movement stuff
-int pirPin = A1; // Analog pin A1
-int pirMovementValue = 0;
+extern int pirPin; // Analog pin A1
+extern int pirMovementValue;
 
 // gas detection stuff
-int gasPin = A2;
-float gasLevel = 0; 
+extern int gasPin;
+extern float gasLevel;
+
+// sound sensor stuff
+extern int soundPin;
+extern const int sampleWindow;
+extern unsigned int sample;
 
 #endif

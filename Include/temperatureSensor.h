@@ -2,6 +2,6 @@
 #define TEMPERATURESENSOR_H
 
 // Function prototype
-void temperatureSensor();
+void readTemperatureSensor();
 
 #endif

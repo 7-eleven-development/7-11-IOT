@@ -2,9 +2,9 @@
 #include "config.h"
 
 // handles logic related to the gas sensor
-void gasSensor()
-{ 
-	gasLevel = analogRead(gasPin); 
+void readGasSensor()
+{
+	gasLevel = analogRead(gasPin);
 	Serial.print("Gas Level: ");
-	Serial.println(gasLevel);  
+	Serial.println(gasLevel);
 }

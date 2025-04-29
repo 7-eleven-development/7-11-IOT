@@ -9,4 +9,7 @@ const char* ssid = "Chas Academy";
 const char* password = "EverythingLouderThanEverythingElse";
 const char* server = "10.100.2.72"; // IP or domain : use the command (ipconfig) in command terminal to find out what it is
 const int port = 3001;
-const char* path = "/temperature";
+
+
+
+// const char* path = "/temperature";

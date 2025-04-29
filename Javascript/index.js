@@ -10,17 +10,7 @@ let latestTemperature = null; // store the latest temperature
 app.use(bodyParser.json());
 
 // POST /temperature – receive data from Arduino
-app.post('/temperature', (req, res) => {
-  const temperature = req.body.temperature;
 
-  if (temperature !== undefined) {
-    latestTemperature = temperature;
-    console.log(`Received temperature: ${temperature}°C`);
-    res.status(200).send({ message: 'Temperature data received' });
-  } else {
-    res.status(400).send({ message: 'No temperature data received' });
-  }
-});
 
 // GET / – show latest temperature in a basic HTML page
 app.get('/', (req, res) => {

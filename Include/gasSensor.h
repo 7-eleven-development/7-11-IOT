@@ -4,6 +4,4 @@
 // Function prototype
 int readGasSensor();
 
-void sendGasData(int gasLevel);
-
 #endif

@@ -4,6 +4,8 @@
 #include "config.h"
 #include "router.h"
 #include "soundSensor.h"
+#include "pulseSensor.h"
+#include "temperatureSensor.h"
 
 unsigned long lastSendTime = 0;
 const unsigned long sendInterval = 5000; // 5 seconds
@@ -26,5 +28,12 @@ void loop() {
     float soundLevel = readSoundSensor();
     // worth mentioning its int, string, string: so the float dissapears, mabye refactor the int to be a void pointer instead, that way it can accept any input;
     sendSensorData(&soundLevel, SENSOR_FLOAT, "gasValue", "/api/airQuality"); 
+
+    int pulseLevel = readPulseSensor();
+    sendSensorData(&pulseLevel, SENSOR_INT, "gasValue", "/api/airQuality"); 
+
+    int temperatureLevel = readPulseSensor();
+    sendSensorData(&temperatureLevel, SENSOR_INT, "gasValue", "/api/airQuality"); 
+
   }
 }

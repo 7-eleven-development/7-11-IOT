@@ -18,3 +18,14 @@ float gasLevel = 0.0;
 int soundPin = A3;
 const int sampleWindow = 100;
 unsigned int sample;
+
+const int OUTPUT_TYPE = SERIAL_PLOTTER; // or PROCESSING_VISUALIZER
+
+// PulseSensor Pin Definitions
+const int PULSE_INPUT = A4;
+const int PULSE_BLINK = LED_BUILTIN;
+const int PULSE_FADE = 5;
+const int THRESHOLD = 650;
+
+// --- Object ---
+PulseSensorPlayground pulseSensor;

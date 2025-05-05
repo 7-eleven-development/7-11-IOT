@@ -1,6 +1,7 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
+#include <PulseSensorPlayground.h>
 #include <Arduino.h> // this might be a bad idea
 
 // temperature STUFF
@@ -20,5 +21,16 @@ extern float gasLevel;
 extern int soundPin;
 extern const int sampleWindow;
 extern unsigned int sample;
+
+extern const int OUTPUT_TYPE; // or PROCESSING_VISUALIZER
+
+// PulseSensor Pin Definitions
+extern const int PULSE_INPUT;
+extern const int PULSE_BLINK;
+extern const int PULSE_FADE;
+extern const int THRESHOLD;
+
+// --- Object ---
+extern PulseSensorPlayground pulseSensor;
 
 #endif

@@ -5,11 +5,12 @@
 const int mq2Pin = A1;   // Pin where the analog output of the MQ-2 is connected
 
 // Wifi part
-const char* ssid = "Chas Academy";
-const char* password = "EverythingLouderThanEverythingElse";
-const char* server = "10.100.2.72"; // IP or domain : use the command (ipconfig) in command terminal to find out what it is
+const char* ssid = "Tele2_e3476a"; // "Chas Academy"
+const char* password = "kzn4i2n3"; // "EverythingLouderThanEverythingElse"
+const char* server = "192.168.0.21"; // IP or domain : use the command (ipconfig) in command terminal to find out what it is
 const int port = 3001;
 
-
-
-// const char* path = "/temperature";
+// sound sensor stuff
+int soundPin = A3;
+const int sampleWindow = 100;
+unsigned int sample;

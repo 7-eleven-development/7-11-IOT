@@ -18,6 +18,9 @@ extern const char* server; // IP or domain
 extern const int port;
 
 
-// extern const char* path;
+// sound sensor stuff
+extern int soundPin;
+extern const int sampleWindow;
+extern unsigned int sample;
 
 #endif

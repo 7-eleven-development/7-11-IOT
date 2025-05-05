@@ -6,13 +6,33 @@
 // Cannot currently connect to an URL, will later need to be refactored when that is relevant
 // connect the URL through a get request from backend.
 
-void sendSensorData(int sensorValue, const char* key, const char* path)
+
+
+
+
+
+
+void sendSensorData(void* sensorValue, SensorType type, const char* key, const char* path)
 {
+
   WiFiClient client;
+  String valueStr;
   
+  switch (type) {
+    case SENSOR_INT:
+      valueStr = String(*((int*)sensorValue));
+      break;
+    case SENSOR_FLOAT:
+      valueStr = String(*((float*)sensorValue), 2);  // 2 decimal places
+      break;
+    default:
+      Serial.println("Unsupported sensor type.");
+      return;
+  }
 
   if(client.connect(server, port)) {
-    String json = "{\"" + String(key) + "\": " + String(sensorValue) + "}"; // Send gas data in JSON format
+    String json = "{\"" + String(key) + "\": " + valueStr + "}";
+
 
     client.println("POST " + String(path) + " HTTP/1.1");
     client.println("Host: " + String(server));
@@ -46,3 +66,4 @@ void sendSensorData(int sensorValue, const char* key, const char* path)
     Serial.println(port);
   }
 }
+

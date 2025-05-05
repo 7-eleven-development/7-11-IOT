@@ -3,6 +3,7 @@
 #include "wifiHandler.h"
 #include "config.h"
 #include "router.h"
+#include "soundSensor.h"
 
 unsigned long lastSendTime = 0;
 const unsigned long sendInterval = 5000; // 5 seconds
@@ -20,6 +21,10 @@ void loop() {
     lastSendTime = currentTime;
 
     int gasLevel = readGasSensor();           // Read the gas sensor value
-    sendSensorData(gasLevel, "gasLevel","/api/gas");                  // Send gas data over Wi-Fi
+    sendSensorData(&gasLevel, SENSOR_INT, "gasValue","/api/airQuality");                  // Send gas data over Wi-Fi
+
+    float soundLevel = readSoundSensor();
+    // worth mentioning its int, string, string: so the float dissapears, mabye refactor the int to be a void pointer instead, that way it can accept any input;
+    sendSensorData(&soundLevel, SENSOR_FLOAT, "gasValue", "/api/airQuality"); 
   }
 }

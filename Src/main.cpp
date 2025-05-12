@@ -6,6 +6,8 @@
 #include "soundSensor.h"
 #include "pulseSensor.h"
 #include "temperatureSensor.h"
+#include <OffOnSwitch.h>
+#include <microControllerID.h>
 
 unsigned long lastSendTime = 0;
 const unsigned long sendInterval = 5000; // 5 seconds
@@ -21,19 +23,13 @@ void loop() {
 
   if (currentTime - lastSendTime >= sendInterval) {
     lastSendTime = currentTime;
-
-    int gasLevel = readGasSensor();           // Read the gas sensor value
-    sendSensorData(&gasLevel, SENSOR_INT, "gasValue","/api/airQuality");                  // Send gas data over Wi-Fi
-
-    float soundLevel = readSoundSensor();
-    // worth mentioning its int, string, string: so the float dissapears, mabye refactor the int to be a void pointer instead, that way it can accept any input;
-    sendSensorData(&soundLevel, SENSOR_FLOAT, "gasValue", "/api/airQuality"); 
-
+    switchSensorState();
+    
     int pulseLevel = readPulseSensor();
-    sendSensorData(&pulseLevel, SENSOR_INT, "gasValue", "/api/airQuality"); 
+    sendSensorData(&pulseLevel, SENSOR_INT, "pulseValue", "/api/pulse"); 
 
-    int temperatureLevel = readPulseSensor();
-    sendSensorData(&temperatureLevel, SENSOR_INT, "gasValue", "/api/airQuality"); 
-
+    String ID = readDeviceID();
+    sendSensorData(&ID, SENSOR_STRING, "ID", "api/id");
+    // Serial.println(ID);
   }
 }

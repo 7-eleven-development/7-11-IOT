@@ -25,6 +25,9 @@ void sendSensorData(void* sensorValue, SensorType type, const char* key, const c
     case SENSOR_FLOAT:
       valueStr = String(*((float*)sensorValue), 2);  // 2 decimal places
       break;
+    case SENSOR_STRING:
+      valueStr = String((char*)sensorValue);
+      break;
     default:
       Serial.println("Unsupported sensor type.");
       return;

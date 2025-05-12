@@ -15,6 +15,7 @@ int soundPin = A3;
 const int sampleWindow = 100;
 unsigned int sample;
 
+
 // pulse Sensor
 const int OUTPUT_TYPE = SERIAL_PLOTTER; // or PROCESSING_VISUALIZER
 const int PULSE_INPUT = A4;
@@ -23,5 +24,11 @@ const int PULSE_FADE = 5;
 const int THRESHOLD = 650;
 PulseSensorPlayground pulseSensor;
 
+
 // temperature sensor
 int temperaturePin = A0; // Analog pin A0
+
+// power pins
+const int soundSensorPowerPin = 6;
+const int temperatureSensorPowerPin = 7;
+const int airSensorPowerPin = 8;

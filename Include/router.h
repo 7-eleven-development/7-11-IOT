@@ -4,7 +4,8 @@
 
 enum SensorType {
     SENSOR_INT,
-    SENSOR_FLOAT
+    SENSOR_FLOAT,
+    SENSOR_STRING
 };
 
 

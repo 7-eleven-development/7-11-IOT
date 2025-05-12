@@ -3,7 +3,7 @@
 
 
 #include <PulseSensorPlayground.h> // library that probably needs to be added
-#include "DHT.h"
+#include "DHT.h" // this might be bad, refactor it later?
 
 // temperature STUFF
 extern int temperaturePin; // Analog pin A0
@@ -25,16 +25,18 @@ extern const int sampleWindow;
 extern unsigned int sample;
 
 
+
 // pulse Sensor
 extern const int OUTPUT_TYPE; // or PROCESSING_VISUALIZER
-
-// PulseSensor Pin Definitions
 extern const int PULSE_INPUT;
 extern const int PULSE_BLINK;
 extern const int PULSE_FADE;
 extern const int THRESHOLD;
-
-// --- Object ---
 extern PulseSensorPlayground pulseSensor;
+
+// Power pins
+extern const int soundSensorPowerPin;
+extern const int temperatureSensorPowerPin;
+extern const int airSensorPowerPin;
 
 #endif

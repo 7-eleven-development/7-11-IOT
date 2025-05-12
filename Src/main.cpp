@@ -4,11 +4,13 @@
 #include "gasSensor.h"
 #include "soundSensor.h"
 #include "config.h"
+#include "gps.h"
 
 void setup()
 {
   Serial.begin(9600);
   // pinMode(LED_BUILTIN, OUTPUT);
+  ss.begin(GPSBaud);
   pinMode(soundPin, INPUT);
 }
 
@@ -17,5 +19,6 @@ void loop()
   // gasSensor();
   // temperatureSensor();
   // movementSensor();
-  readSoundSensor();
+  //readSoundSensor();
+  readGPSSensor();
 }

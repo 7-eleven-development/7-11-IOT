@@ -55,28 +55,16 @@ void turnOffSensors()
 }
 
 int stateSensorCounter = 0; // global variable
+Sensor sensorList[] = {TEMPERATURESENSOR, AIRSENSOR, SOUNDSENSOR};
 
-void switchSensorState()
-{
+// gets amount of sensors
+int getTotalSensors() {
+    return sizeof(sensorList) / sizeof(sensorList[0]);
+}
+
+// cycles through the sensors
+void switchSensorState() {
     turnOffSensors();
-    if(stateSensorCounter == 0)
-    {
-        switchSensor(TEMPERATURESENSOR);
-        stateSensorCounter++;
-    } 
-    else if(stateSensorCounter == 1)
-    {
-        switchSensor(AIRSENSOR);
-        stateSensorCounter++;
-    }
-    else if(stateSensorCounter == 2)
-    {
-        switchSensor(SOUNDSENSOR);
-        stateSensorCounter++;
-    }
-    else if(stateSensorCounter == 3)
-    {
-        // resets the counter
-        stateSensorCounter = 0;
-    }
+    switchSensor(sensorList[stateSensorCounter]);
+    stateSensorCounter = (stateSensorCounter + 1) % getTotalSensors(); // Loop back to 0 through modolus
 }

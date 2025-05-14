@@ -10,5 +10,6 @@ enum Sensor {
 void switchSensor(Sensor sensorType);
 void turnOffSensors();
 void switchSensorState();
+int getTotalSensors();
 
 #endif

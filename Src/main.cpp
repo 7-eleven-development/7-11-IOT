@@ -30,6 +30,5 @@ void loop() {
 
     String ID = readDeviceID();
     sendSensorData(&ID, SENSOR_STRING, "ID", "api/id");
-    // Serial.println(ID);
   }
 }

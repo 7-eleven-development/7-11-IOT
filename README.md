@@ -1,7 +1,6 @@
 # Overview
 This project encompasses a sensor embedded in a belt or wristband designed to measure various values such as temperature, movement, air quality, pulse, and noise levels. The sensor readings can be used for health tracking, environmental monitoring, and general wellness.
 
-![Screenshot 2025-04-07 094303](https://github.com/user-attachments/assets/ee6ad579-0cc0-49f8-8d33-c8d75d14e29a)
 # Features
 Temperature Measurement: Measures the body or environment's temperature.
 

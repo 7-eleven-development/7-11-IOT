@@ -7,7 +7,9 @@
 #include "pulseSensor.h"
 #include "temperatureSensor.h"
 #include <OffOnSwitch.h>
+#include <gps.h>
 
+#define gpsSerial Serial1  // or Serial2, etc.
 
 void switchSensor(Sensor sensorType)
 {
@@ -40,6 +42,19 @@ void switchSensor(Sensor sensorType)
         sendSensorData(&soundLevel, SENSOR_FLOAT, "soundValue", "/api/sound"); 
         break;
     }
+    case GPSSENSOR: 
+    {
+        GPSCoordinates coords = getGPSCoordinates(gpsSerial);
+        float longitudeLevel = readLongitudeGpsValue(coords);
+        float latitudeLevel = readLatitudeGpsValue(coords);
+        digitalWrite(gpsSensorPowerPin, HIGH);
+        Serial.println("Gps Sensor State Reached");
+        Serial.println(longitudeLevel);
+        Serial.println(latitudeLevel);
+        sendSensorData(&longitudeLevel, SENSOR_FLOAT, "longitudeValue", "/api/gps", 
+               nullptr, "latitudeValue", String(latitudeLevel, 6)); 
+        break;
+    }
     default:
         Serial.println("Unsupported sensor");
         break;
@@ -52,10 +67,11 @@ void turnOffSensors()
     digitalWrite(temperatureSensorPowerPin, LOW);
     digitalWrite(airSensorPowerPin, LOW);
     digitalWrite(soundSensorPowerPin, LOW);
+    digitalWrite(gpsSensorPowerPin, LOW);
 }
 
 int stateSensorCounter = 0; // global variable
-Sensor sensorList[] = {TEMPERATURESENSOR, AIRSENSOR, SOUNDSENSOR};
+Sensor sensorList[] = {TEMPERATURESENSOR, AIRSENSOR, SOUNDSENSOR, GPSSENSOR};
 
 // gets amount of sensors
 int getTotalSensors() {

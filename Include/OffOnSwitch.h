@@ -4,6 +4,7 @@
 enum Sensor {
     TEMPERATURESENSOR,
     AIRSENSOR,
+    GPSSENSOR,
     SOUNDSENSOR
 };
 

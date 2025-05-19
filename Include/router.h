@@ -10,6 +10,12 @@ enum SensorType {
 
 
 // Function prototype
-void sendSensorData(void* sensorValue, SensorType type, const char* key, const char* path);
+void sendSensorData(void* sensorValue,
+                    SensorType type,
+                    const char* key1,
+                    const char* path,
+                    const char* customHost = nullptr,   
+                    const char* key2 = nullptr,         
+                    const String& value2 = "");
 
 #endif

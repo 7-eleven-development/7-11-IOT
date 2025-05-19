@@ -27,8 +27,5 @@ void loop() {
     
     int pulseLevel = readPulseSensor();
     sendSensorData(&pulseLevel, SENSOR_INT, "pulseValue", "/api/pulse"); 
-
-    String ID = readDeviceID();
-    sendSensorData(&ID, SENSOR_STRING, "ID", "api/id");
   }
 }

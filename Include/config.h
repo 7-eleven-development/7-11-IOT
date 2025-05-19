@@ -1,9 +1,11 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
-
 #include <PulseSensorPlayground.h> // library that probably needs to be added
 #include "DHT.h" // this might be bad, refactor it later?
+// #include <TinyGPS++.h> // this is likely a terrible idea 
+
+class TinyGPSPlus; // forward declare TinyGPS++.
 
 // temperature STUFF
 extern int temperaturePin; // Analog pin A0
@@ -24,7 +26,11 @@ extern int soundPin;
 extern const int sampleWindow;
 extern unsigned int sample;
 
-
+// GPS Sensor
+extern const int RXPin; // Serial RX pin
+extern const int TXPin; // Serial TX pin
+extern const uint32_t GPSBaud; // Baud rate for GPS module
+extern TinyGPSPlus gps; // TinyGPSPlus object
 
 // pulse Sensor
 extern const int OUTPUT_TYPE; // or PROCESSING_VISUALIZER
@@ -38,5 +44,6 @@ extern PulseSensorPlayground pulseSensor;
 extern const int soundSensorPowerPin;
 extern const int temperatureSensorPowerPin;
 extern const int airSensorPowerPin;
+extern const int gpsSensorPowerPin;
 
 #endif

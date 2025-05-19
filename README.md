@@ -108,7 +108,7 @@ Main Files (unfinished)
 
 
 # Contributing
-THis project does not accept contributions at the current moment outside of the team itself
+This project does not accept contributions at the current moment outside of the team itself
 
 
 # License

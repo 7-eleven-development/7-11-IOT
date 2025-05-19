@@ -2,13 +2,13 @@
 This project encompasses a sensor embedded in a belt or wristband designed to measure various values such as temperature, movement, air quality, pulse, and noise levels. The sensor readings can be used for health tracking, environmental monitoring, and general wellness.
 
 # Features
-Temperature Measurement: Measures the body or environment's temperature.
+Temperature Measurement: Measures the environment's temperature.
 
 GPS Detection: Detects and records Location using a GPS Sensor.
 
 Air Quality Monitoring: Measures air quality or pollution levels, such as CO2 or particulate matter.
 
-Pulse Monitoring: Tracks heart rate or pulse for fitness and health monitoring.
+Pulse Monitoring: Tracks heart rate or pulse to detect dangerous values.
 
 Noise Level Detection: Measures ambient noise levels for noise pollution assessment.
 

@@ -4,8 +4,6 @@
 #include <microControllerID.h>
 
 
-// Cannot currently connect to an URL, will later need to be refactored when that is relevant
-// connect the URL through a get request from backend.
 
 
 
@@ -26,7 +24,8 @@ String sensorValueToString(void* sensorValue, SensorType type) {
 // builds the json package to be sent to backend
 String buildJsonPayload(const String& deviceId,
                         const char* key1, const String& value1,
-                        const char* key2 = nullptr, const String& value2 = "") {
+                        const char* key2 = nullptr, const String& value2 = "",
+                        const char* key3 = nullptr, const String& value3 = "") {
   String json = "{";
 
   // Always include device_id
@@ -39,6 +38,10 @@ String buildJsonPayload(const String& deviceId,
   if (key2 != nullptr && value2.length() > 0) {
     json += ", \"" + String(key2) + "\": " + value2;
   }
+  // Optionally include third key-value pair
+  if (key3 != nullptr && value3.length() > 0) {
+    json += ", \"" + String(key3) + "\": " + value3;
+  }
 
   json += "}";
 
@@ -46,42 +49,43 @@ String buildJsonPayload(const String& deviceId,
 }
 
 void postToServer(const char* hostToUse, const char* path, const String& json) {
-  WiFiClient client;
+  WiFiClient wifiClient;
+  WiFiSSLClient wifiSSLClient;
 
-    if(client.connect(server, port)) {
+  // chooses whether to use HTTP or HTTPS
+  Client* client = useSSL ? (Client*)&wifiSSLClient : (Client*)&wifiClient;
 
-
-    client.println("POST " + String(path) + " HTTP/1.1");
-    client.println("Host: " + String(hostToUse));
-    client.println("Content-Type: application/json");
-    client.print("Content-Length: ");
-    client.println(json.length());
-    client.println();  // End of header
-    client.println(json);  // Send the actual JSON data
-
+  if (client->connect(hostToUse, port)) {
+    client->println("POST " + String(path) + " HTTP/1.1");
+    client->println("Host: " + String(hostToUse));
+    client->println("Content-Type: application/json");
+    client->print("Content-Length: ");
+    client->println(json.length());
+    client->println(); // End of headers
+    client->println(json); // Send JSON payload
 
     Serial.println("Sent to " + String(path) + ": " + json);
 
-
-    while(client.connected()) {
-        String line = client.readStringUntil('\n');
-        if(line == "\r") break;
+    // Read response
+    while (client->connected()) {
+      String line = client->readStringUntil('\n');
+      if (line == "\r") break;
     }
 
-    while(client.available()) {
-      String line = client.readStringUntil('\n');
-      Serial.println(line); // prints a response from backend
+    while (client->available()) {
+      String line = client->readStringUntil('\n');
+      Serial.println(line);
     }
 
-    client.stop();
-  }
-  else {
+    client->stop();
+  } else {
     Serial.println("Failed to connect to backend.");
-    Serial.print("Server IP: ");
+    Serial.print("Host: ");
     Serial.println(hostToUse);
     Serial.print("Port: ");
     Serial.println(port);
   }
+
 }
 
 
@@ -105,7 +109,9 @@ void sendSensorData(void* sensorValue,
                     const char* path,
                     const char* customHost,
                     const char* key2,
-                    const String& sensorValue2)
+                    const String& sensorValue2,
+                    const char* key3,
+                    const String& sensorValue3)
 {
   const char* hostToUse = (customHost != nullptr) ? customHost : server;
   String value1 = sensorValueToString(sensorValue, type);
@@ -113,7 +119,7 @@ void sendSensorData(void* sensorValue,
   if (value1.length() == 0) return;
 
   String deviceId = readDeviceID();
-  String json = buildJsonPayload(deviceId, key1, value1, key2, sensorValue2);
+  String json = buildJsonPayload(deviceId, key1, value1, key2, sensorValue2, key3, sensorValue3);
 
   postToServer(hostToUse, path, json);
 }

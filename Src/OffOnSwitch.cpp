@@ -30,7 +30,7 @@ void switchSensor(Sensor sensorType)
         int gasLevel = readGasSensor();           // Read the gas sensor value
         Serial.println("gas Sensor State Reached");
         Serial.println(gasLevel);
-        sendSensorData(&gasLevel, SENSOR_INT, "gasValue","/api/airQuality");                 // Send gas data over Wi-Fi
+        sendSensorData(&gasLevel, SENSOR_INT, "smoke","/api/airQuality", nullptr, "propane", String(0), "c02", String(0));                 // Send gas data over Wi-Fi
         break;
     }
     case SOUNDSENSOR: 

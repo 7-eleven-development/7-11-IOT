@@ -16,6 +16,8 @@ void sendSensorData(void* sensorValue,
                     const char* path,
                     const char* customHost = nullptr,   
                     const char* key2 = nullptr,         
-                    const String& value2 = "");
+                    const String& value2 = "",
+                    const char* key3 = nullptr,         
+                    const String& value3 = "");
 
 #endif

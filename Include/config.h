@@ -19,6 +19,7 @@ extern const char* ssid;
 extern const char* password;
 extern const char* server; // IP or domain
 extern const int port;
+extern const bool useSSL; 
 
 
 // sound sensor stuff

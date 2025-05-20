@@ -8,8 +8,9 @@ const int mq2Pin = A1;   // Pin where the analog output of the MQ-2 is connected
 // Wifi part
 const char* ssid = "Chas Academy"; // "Chas Academy"
 const char* password = "EverythingLouderThanEverythingElse"; // "EverythingLouderThanEverythingElse"
-const char* server = "192.143.0.00"; // IP or domain : use the command (ipconfig) in command terminal to find out what it is
-const int port = 3001;
+const char* server = "192.143.0.00"; // IP or domain : use the command (ipconfig) in command terminal to find out what it is // "chas-challenge.vercel.app"
+const int port = 3001; // 443
+extern const bool useSSL = true; // specifies if it uses HTTP (local host) or HTTPS, use true for HTTPS and false for HTTP 
 
 // sound sensor stuff
 int soundPin = A3;

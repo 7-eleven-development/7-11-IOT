@@ -105,6 +105,17 @@ Main Files (unfinished)
 
 # Future Enchantments
   Improve on how pulse values are read to make the most critical part of this system be more reliable
+  
+  Fault detection, identify errors during execution that can lead to silent failures
+
+  Improve concurrency flow within the program, enableing non blocking behaviour.
+
+  Watchdog, simulate Watchdog behaviour upon sensor reading to ensure that the program does not get blocked upon sensor reading.
+
+  Secure data transmission between backend and IOT (read up on it)
+
+  
+
 
 
 # Contributing

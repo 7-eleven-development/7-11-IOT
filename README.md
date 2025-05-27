@@ -113,15 +113,3 @@ Main Files (unfinished)
   Watchdog, simulate Watchdog behaviour upon sensor reading to ensure that the program does not get blocked upon sensor reading.
 
   Secure data transmission between backend and IOT (read up on it)
-
-  
-
-
-
-# Contributing
-This project does not accept contributions at the current moment outside of the team itself
-
-
-# License
-This project is licensed under the MIT License.
-(Add a file listing what the MIT license implies)

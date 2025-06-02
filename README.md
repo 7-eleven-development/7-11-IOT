@@ -89,19 +89,25 @@ Available Sensors:
 
 # Code Description
 
-    Sensor Integration: The code integrates with sensors (e.g., temperature, motion, air quality, etc.) through libraries.
+    Sensor Integration: The code integrates with sensors (e.g., temperature, motion, gas, etc.) through libraries.
 
     Data Collection and Transmission: The sensor data is collected and sent either to a local display or to a cloud server for further analysis.
 
     WiFi: Data can be transmitted to a cloud server or connected devices using WiFi.
 
-Main Files (unfinished)
+Main Files
 
     gps.cpp: Handles GPS sensor readings and integrates with other sensors.
 
-    sensor.cpp: Reads data from individual sensors and processes them.
+    "sensor".cpp: Reads data from individual sensors and processes them.
 
     router.cpp: Manages communication between the IoT device and the server.
+
+    OffOnSwitch.cpp: Manages power, reading, and Wi-Fi transmission for multiple sensors by cycling through them one at a time in a looped sequence.
+
+    microControllerID.cpp: Reads and returns a unique device identifier by accessing the microcontroller's hardware ID registers.
+
+    wifiHandler.cpp: Handles connecting the device to a Wi-Fi network using provided credentials, with a timeout to prevent indefinite blocking.
 
 
 # Future Enchantments

@@ -110,7 +110,9 @@ Main Files
     wifiHandler.cpp: Handles connecting the device to a Wi-Fi network using provided credentials, with a timeout to prevent indefinite blocking.
 
 
-# Future Enchantments
+# Future Enhancements
+Software:
+
   Improve on how pulse values are read to make the most critical part of this system be more reliable
   
   Fault detection, identify errors during execution that can lead to silent failures
@@ -120,3 +122,14 @@ Main Files
   Watchdog, simulate Watchdog behaviour upon sensor reading to ensure that the program does not get blocked upon sensor reading.
 
   Secure data transmission between backend and IOT (read up on it)
+  
+Hardware:
+
+  _In general: More reliable and smaller sanesors for portability_
+  
+  An air quality sensor that read actual air quality levels, not just gas.
+
+  A pulse sensor that measures puls via the wrist, for portability and ease of use.
+
+  
+  

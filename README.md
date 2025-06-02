@@ -20,8 +20,7 @@ To build the project from the source code:
 
 Clone this repository:
 ```
-  git clone https://github.com/your-username/smart-belt-sensor.git
-  cd smart-belt-sensor
+  git clone (https://github.com/7-eleven-development/7-11-IOT.git)
 ```
 Install required dependencies (example for Arduino or similar):
 

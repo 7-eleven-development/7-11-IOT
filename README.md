@@ -63,13 +63,13 @@ Available Sensors:
 
         Returns: Float values representing latitude and Longitude
 
-    Air Quality Sensor
+    Gas Sensor
 
         Function: Measures particulate matter or gases.
 
-        API: readAirQualitySensor()
+        API: readGasSensor()
 
-        Returns: A float representing the air quality value.
+        Returns: A float representing the gas value.
 
     Pulse Sensor
 
@@ -79,13 +79,13 @@ Available Sensors:
 
         Returns: An integer representing the pulse rate.
 
-    Noise Sensor
+    Sound Sensor
 
         Function: Measures ambient noise levels in decibels (dB).
 
-        API: readNoiseSensor()
+        API: readSoundSensor()
 
-        Returns: A float representing the noise level.
+        Returns: A float representing the sound level.
 
 # Code Description
 

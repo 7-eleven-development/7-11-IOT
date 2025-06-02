@@ -20,7 +20,7 @@ To build the project from the source code:
 
 Clone this repository:
 ```
-  git clone [https://github.com/7-eleven-development/7-11-IOT.git]
+  git clone https://github.com/7-eleven-development/7-11-IOT.git
 ```
 Install required dependencies (example for Arduino or similar):
 

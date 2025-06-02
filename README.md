@@ -1,4 +1,6 @@
 # Overview
+*Disclaimer* The project in its current stage is a prototype, meant to be further developed. That means that some features, like the portability of the product, is not present as of yet.
+
 This project encompasses a sensor embedded in a belt or wristband designed to measure various values such as temperature, movement, air quality, pulse, and noise levels. The sensor readings can be used for health tracking, environmental monitoring, and general wellness.
 
 # Features

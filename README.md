@@ -8,7 +8,7 @@ Temperature Measurement: Measures the environment's temperature.
 
 GPS Detection: Detects and records Location using a GPS Sensor.
 
-Air Quality Monitoring: Measures air quality or pollution levels, such as CO2 or particulate matter.
+Gas Monitoring: Measures gas levels, such as CO2 or particulate matter.
 
 Pulse Monitoring: Tracks heart rate or pulse to detect dangerous values.
 

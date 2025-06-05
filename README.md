@@ -129,4 +129,6 @@ Hardware:
   
   An air quality sensor that read actual air quality levels, not just gas.
 
-A pulse sensor that measures puls via the wrist, for portability and ease of use.
+  A pulse sensor that measures puls via the wrist, for portability and ease of use.
+
+  

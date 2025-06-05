@@ -3,5 +3,6 @@
 
 // Function prototype
 int readPulseSensor();
+int randomPulseValue();
 
 #endif

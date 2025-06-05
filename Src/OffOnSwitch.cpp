@@ -44,10 +44,12 @@ void switchSensor(Sensor sensorType)
     }
     case GPSSENSOR: 
     {
-        GPSCoordinates coords = getGPSCoordinates(gpsSerial);
-        float longitudeLevel = readLongitudeGpsValue(coords);
-        float latitudeLevel = readLatitudeGpsValue(coords);
+        // GPSCoordinates coords = getGPSCoordinates(gpsSerial);
+        // float longitudeLevel = readLongitudeGpsValue(coords);
+        // float latitudeLevel = readLatitudeGpsValue(coords);
         digitalWrite(gpsSensorPowerPin, HIGH);
+        float longitudeLevel = randomGPSValue();
+        float latitudeLevel = randomGPSValue();
         Serial.println("Gps Sensor State Reached");
         Serial.println(longitudeLevel);
         Serial.println(latitudeLevel);

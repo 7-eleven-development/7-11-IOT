@@ -37,3 +37,9 @@ float readLongitudeGpsValue(GPSCoordinates gpsCoordinates)
      float longitude = gpsCoordinates.longitude;
      return longitude;
 }
+
+float randomGPSValue()
+{
+    int randomValue = random(0, 100); // Generates a random number between 0 and 99
+    return randomValue;
+}

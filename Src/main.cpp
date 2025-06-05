@@ -25,7 +25,7 @@ void loop() {
     lastSendTime = currentTime;
     switchSensorState();
     
-    int pulseLevel = readPulseSensor();
+    int pulseLevel = randomPulseValue();
     sendSensorData(&pulseLevel, SENSOR_INT, "pulseValue", "/api/pulse"); 
   }
 }

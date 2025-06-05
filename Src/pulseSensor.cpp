@@ -13,3 +13,9 @@ int readPulseSensor()
     }
     return 0;
 } 
+
+int randomPulseValue()
+{
+    int randomValue = random(0, 100); // Generates a random number between 0 and 99
+    return randomValue;
+}

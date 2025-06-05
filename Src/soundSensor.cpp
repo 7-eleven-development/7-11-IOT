@@ -32,5 +32,6 @@ float readSoundSensor()
     Serial.print(db);
     Serial.println(" dB");
     return db;
-    delay(200);
+    // there exists a delay
+    delay(200); // why is there a delay here???
 }

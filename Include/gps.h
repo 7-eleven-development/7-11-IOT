@@ -13,5 +13,6 @@ struct GPSCoordinates {
 GPSCoordinates getGPSCoordinates(Stream& gpsStream);
 float readLatitudeGpsValue(GPSCoordinates gpsCoordinates);
 float readLongitudeGpsValue(GPSCoordinates gpsCoordinates);
+float randomGPSValue();
 
 #endif

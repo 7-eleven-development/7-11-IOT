@@ -87,7 +87,7 @@ Available Sensors:
 
         Returns: A float representing the sound level.
 
-# Code Description
+# Architecture Description
 
     Sensor Integration: The code integrates with sensors (e.g., temperature, motion, gas, etc.) through libraries.
 

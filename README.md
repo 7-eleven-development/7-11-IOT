@@ -14,12 +14,14 @@ This project encompasses a sensor embedded in a belt or wristband designed to me
   - [7-11-fullstack](https://github.com/7-eleven-development/7-11-fullstack)  
   - [7-11Frontend](https://github.com/7-eleven-development/7-11Frontend)  
   - [7-11-IOT](https://github.com/7-eleven-development/7-11-IOT)
-
+  
 - [RETROSPECTIV.md](https://github.com/7-eleven-development/7-11-IOT/blob/main/Retrospective.md)
 
 - [Architecture.md]  
   Present in the readme
   - [7-11-IOT](https://github.com/7-eleven-development/7-11-IOT)
+  - [7-11-fullstack](https://github.com/7-eleven-development/7-11-fullstack)  
+  - [7-11Frontend](https://github.com/7-eleven-development/7-11Frontend)  
 
 - [TESTING.md](https://github.com/7-eleven-development/7-11-IOT/blob/main/Testing.md)
 

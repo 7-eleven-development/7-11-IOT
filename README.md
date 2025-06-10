@@ -21,7 +21,7 @@ https://github.com/7-eleven-development/7-11-IOT/blob/main/Retrospective.md
 ● ARCHITECTURE.md - 
 IOT part of this is in the readme of https://github.com/7-eleven-development/7-11-IOT
 
-● TESTING.md - Beskrivning av tester och teststrategier
+● TESTING.md - [Beskrivning av tester och teststrategier](https://github.com/7-eleven-development/7-11-IOT/blob/main/Testing.md)
 
 
 # Features

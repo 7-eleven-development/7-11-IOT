@@ -3,36 +3,24 @@
 
 This project encompasses a sensor embedded in a belt or wristband designed to measure various values such as temperature, movement, gas, pulse, and sound levels. The sensor readings can be used for health tracking, environmental monitoring, and general wellness.
 
-● PROJEKTPLAN.md - 
+- [PROJEKTPLAN.md](https://github.com/7-eleven-development/7-11-IOT/blob/main/Projektplan.md)
 
-    https://github.com/7-eleven-development/7-11-IOT/blob/main/Projektplan.md
+- [API-DOCUMENTATION.md](https://github.com/7-eleven-development/7-11-fullstack/tree/main/docs)
 
-● API-DOCUMENTATION.md - 
+- ACCESSIBILITY.md - Non-existent, needs to be done by frontend as I lack the knowledge regarding this topic.
 
-    https://github.com/7-eleven-development/7-11-fullstack/tree/main/docs
+- [CHANGELOG.md]  
+  Read the commit history in these repositories (all use **main** branch as of 2025/6/10):  
+  - [7-11-fullstack](https://github.com/7-eleven-development/7-11-fullstack)  
+  - [7-11Frontend](https://github.com/7-eleven-development/7-11Frontend)  
+  - [7-11-IOT](https://github.com/7-eleven-development/7-11-IOT)
 
-● ACCESSIBILITY.md - Non-existent, needs to be done by frontend as i lack the knowledge regarding this topic ()
+- [RETROSPECTIV.md](https://github.com/7-eleven-development/7-11-IOT/blob/main/Retrospective.md)
 
-● CHANGELOG.md - Read the Commit history 
-Here are the repostitories, all use main as their most updated branch as of 2025/6/10
+- [ARCHITECTURE.md](https://github.com/7-eleven-development/7-11-IOT)
 
-    https://github.com/7-eleven-development/7-11-fullstack
+- [TESTING.md](https://github.com/7-eleven-development/7-11-IOT/blob/main/Testing.md)
 
-    https://github.com/7-eleven-development/7-11Frontend 
-
-    https://github.com/7-eleven-development/7-11-IOT
-
-● RETROSPECTIV.md - 
-
-    https://github.com/7-eleven-development/7-11-IOT/blob/main/Retrospective.md
-
-● ARCHITECTURE.md - 
-
-    [https://github.com/7-eleven-development/7-11-IOT]
-
-● TESTING.md -
-
-    https://github.com/7-eleven-development/7-11-IOT/blob/main/Testing.md
 
 # Features
 Temperature Measurement: Measures the environment's temperature.

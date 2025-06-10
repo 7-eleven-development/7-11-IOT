@@ -28,7 +28,7 @@ Here are the repostitories, all use main as their most updated branch as of 2025
 
 ● ARCHITECTURE.md - 
 
-    IOT part of this is in the readme of https://github.com/7-eleven-development/7-11-IOT
+    [https://github.com/7-eleven-development/7-11-IOT]
 
 ● TESTING.md -
 

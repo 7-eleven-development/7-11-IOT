@@ -12,7 +12,9 @@ This project encompasses a sensor embedded in a belt or wristband designed to me
 ● CHANGELOG.md - Read the Commit history 
 Here are the repostitories, all use main as their most updated branch as of 2025/6/10
 https://github.com/7-eleven-development/7-11-fullstack
+
 https://github.com/7-eleven-development/7-11Frontend 
+
 https://github.com/7-eleven-development/7-11-IOT
 
 ● RETROSPECTIV.md - Reflektioner kring arbetsprocessen och lärdomar.

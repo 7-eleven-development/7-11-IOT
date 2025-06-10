@@ -3,28 +3,36 @@
 
 This project encompasses a sensor embedded in a belt or wristband designed to measure various values such as temperature, movement, gas, pulse, and sound levels. The sensor readings can be used for health tracking, environmental monitoring, and general wellness.
 
-● PROJEKTPLAN.md - https://github.com/7-eleven-development/7-11-IOT/blob/main/Projektplan.md
+● PROJEKTPLAN.md - 
 
-● API-DOCUMENTATION.md - https://github.com/7-eleven-development/7-11-fullstack/tree/main/docs
+    https://github.com/7-eleven-development/7-11-IOT/blob/main/Projektplan.md
+
+● API-DOCUMENTATION.md - 
+
+    https://github.com/7-eleven-development/7-11-fullstack/tree/main/docs
 
 ● ACCESSIBILITY.md - Non-existent, needs to be done by frontend as i lack the knowledge regarding this topic ()
 
 ● CHANGELOG.md - Read the Commit history 
 Here are the repostitories, all use main as their most updated branch as of 2025/6/10
-https://github.com/7-eleven-development/7-11-fullstack
 
-https://github.com/7-eleven-development/7-11Frontend 
+    https://github.com/7-eleven-development/7-11-fullstack
 
-https://github.com/7-eleven-development/7-11-IOT
+    https://github.com/7-eleven-development/7-11Frontend 
 
-● RETROSPECTIV.md - Reflektioner kring arbetsprocessen och lärdomar.
-https://github.com/7-eleven-development/7-11-IOT/blob/main/Retrospective.md
+    https://github.com/7-eleven-development/7-11-IOT
+
+● RETROSPECTIV.md - 
+
+    https://github.com/7-eleven-development/7-11-IOT/blob/main/Retrospective.md
 
 ● ARCHITECTURE.md - 
-IOT part of this is in the readme of https://github.com/7-eleven-development/7-11-IOT
 
-● TESTING.md - [Beskrivning av tester och teststrategier](https://github.com/7-eleven-development/7-11-IOT/blob/main/Testing.md)
+    IOT part of this is in the readme of https://github.com/7-eleven-development/7-11-IOT
 
+● TESTING.md -
+
+    https://github.com/7-eleven-development/7-11-IOT/blob/main/Testing.md
 
 # Features
 Temperature Measurement: Measures the environment's temperature.
